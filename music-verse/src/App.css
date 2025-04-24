@@ -1,0 +1,315 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Orbitron', sans-serif;
+  overflow-x: hidden;
+}
+
+.app {
+  background-image: url('./assets/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.overlay {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: rgb(19, 180, 19);
+  margin: 20px 0;
+  text-shadow: 0 0 10px rgba(199, 151, 183, 0.5);
+}
+
+.header p {
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+.logo {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.search-section {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-section input {
+  padding: 15px 25px;
+  width: 60%;
+  min-width: 300px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.search-section button {
+  padding: 15px 30px;
+  background-color: lightgrey;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-section button:hover {
+  background-color: mediumseagreen;
+  transform: scale(1.05);
+}
+
+.features-box, .about {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 40px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features-box:hover, .about:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.6);
+}
+
+.features-box h2, .about h2 {
+  font-size: 2.2rem;
+  color: lightgreen;
+  margin-bottom: 25px;
+}
+
+.features-box ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.features-box li {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  color: #ccc;
+  padding-left: 30px;
+  position: relative;
+}
+
+.features-box li:before {
+  content: '→';
+  color: lightgreen;
+  position: absolute;
+  left: 0;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.people {
+  margin: 60px 0;
+  width: 100%;
+}
+
+.people h2 {
+  font-size: 2.2rem;
+  color: lightgreen;
+  margin-bottom: 40px;
+}
+
+.profiles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 20px;
+}
+
+.profile {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 30px 20px 20px;
+  border-radius: 15px;
+  width: 220px;
+  position: relative;
+  margin-top: 60px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 255, 0, 0.4);
+}
+
+.profile-pic-container {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid lightgreen;
+  background-color: #222;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile p {
+  color: #ccc;
+  margin: 0;
+}
+
+.profile strong {
+  color: lightgreen;
+  font-size: 1.2rem;
+}
+
+.contact {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 40px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.contact h2 {
+  font-size: 2.2rem;
+  color: lightgreen;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact input, .contact textarea {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.contact textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact button {
+  font-family: 'Poppins', sans-serif;
+
+  padding: 15px;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.contact button:hover {
+  background-color: mediumseagreen;
+  transform: scale(1.03);
+}
+
+.copyright {
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .search-section {
+    flex-direction: column;
+  }
+  
+  .search-section input {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+  
+  .features-box, .about {
+    width: 90%;
+    padding: 30px 20px;
+  }
+  
+/* People Section - Desktop Only */
+.profile {
+  padding-top: 90px !important; /* More space for the image */
+  margin-top: 80px !important; /* More margin to prevent overlap */
+}
+/* Replace your current font-family rules */
+body, html {
+  font-family: 'Poppins', sans-serif; /* Primary font */
+}
+
+.header h1, 
+.features-box h2, 
+.about h2, 
+.people h2, 
+.contact h2 {
+  font-family: 'Bungee', cursive; /* Fun headings */
+  letter-spacing: 1px;
+}
+
+/* For the techy look (if you prefer to keep Orbitron) */
+/* .header h1 {
+  font-family: 'Orbitron', sans-serif;
+} */
+
+
+
+}
